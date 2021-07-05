@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,7 +73,7 @@
     }
 
     .navbar li a:hover {
-  color: purple;
+  color: blue;
   text-decoration: underline;
 }
     .btn {
@@ -123,6 +122,10 @@
         width: 50%;
         margin: 15px auto;
     }
+    @media screen and (max-width: 800px)
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 </style>
 
 <body>
@@ -135,10 +138,15 @@
         <!-- Mid box for navbar -->
         <div class="mid">
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Fitness Calculator</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <table border="3,black">
+                   <tr>
+                    <td> <li><a href="#" class="active">Home</a></li></td>
+                    <td><li><a href="#">Packages</li></td>
+                    <td><li><a href="#">Calculator</a></li></td>
+                    <td><li><a href="#">About</li></td>
+                   </tr> 
+                </table>
+                
             </ul>
         </div>
 
