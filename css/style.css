@@ -1,0 +1,86 @@
+body
+        {
+            background: url("background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+            background-size: cover;
+            color: black;
+        }
+        a img{
+            width: 100px;
+            height: 100px;
+        }
+        #logo-img
+        {
+            width: 136px;
+            filter: invert(100%);
+        }
+        #anchor
+        {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+            margin-left: 2%;
+        }
+        .navbar-nav
+        {
+            width: 60%;
+        }
+        .navbar-nav li{
+            width: 100%;
+            text-align: center;
+        }
+        .navbar-nav
+        {
+            margin-top: -30px;
+            background-color: darkgray;
+        }
+        .navbar-nav li:hover
+        {
+            background-color: gray;
+        }
+        .navbar-nav a
+        {
+            font-size: 1.2rem;
+        }
+        .btn    
+        {
+            background-color: darkgray;
+            color: gray;
+        }
+        .btn:hover
+        {
+            background-color: gray;
+            color: darkgray;
+        }
+        form
+        {
+            margin-top: 3%;
+            width: 30%;
+        }
+        footer{
+            text-align: center;
+            display: block;
+        }
+        @media screen and (max-width: 1000px) {
+            nav
+            {
+                border-bottom: 1px solid white;
+            }
+            .navbar-nav
+            {
+                margin-top: 20px;
+            }
+            .btn
+            {
+                margin-top: 20px;
+                padding: 5px;
+            }
+            
+            form
+        {
+            margin-top: 5%;
+            width: 80%;
+        }
+        }
