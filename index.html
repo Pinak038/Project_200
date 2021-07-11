@@ -1,185 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fit and Lift Gym Center</title>
-</head>
-<link rel="stylesheet" href="css/style.css">
-<style>
-    /* CSS Reset */
-    body {
-        font-family: "Times New Roman", Times, serif;
-        color: black;
-        margin: 0px;
-        padding: 0px;
-        background: url("background.jpg");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: center;
-        background-size: cover;
-    }
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    .left {
-        display: inline-block;
-        border: 4px;
-        position: absolute;
-        left: 60px;
-        top: 20px;
-    }
-
-    .left img {
-        width: 136px;
-        filter: invert(100%);
-    }
-
-    .left div {
-        line-height: 19px;
-        font-size: 26px;
-        text-align: center;
-    }
-
-    .mid {
-        display: block;
-        width: 36%;
-        margin: 0px auto;
-        /* border: 2px solid green; */
-    }
-
-    .right {
-        position: absolute;
-        right: 40px;
-        top: 50px;
-        display: inline-block;
-        /* border: 2px solid yellow; */
-    }
-
-    .navbar {
-        display: inline-block;
-    }
-
-    .navbar li {
-        display: inline-block;
-        font-size: 25px;
-    }
-
-    .navbar li a {
-        color: black;
-        text-decoration: none;
-        padding: 34px 23px;
-
-    }
-
-    .navbar li a:hover {
-  color: blue;
-  text-decoration: underline;
-}
-    .btn {
-        font-family: "Times New Roman", Times, serif;
-        margin: 0px 9px;
-        background-color: black;
-        color: white;
-        padding: 4px 12px;
-        border: 2px solid grey;
-        border-radius: 10px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .btn:hover {
-        color:purple;
-        background-color: grey;
-    }
-    
-    .container {
-        margin: 90px 65px;
-        padding: 45px;
-        width: 20%;
-        border-radius: 10px;
-    }
-
-    .form-group input {
-        font-family: "Times New Roman", Times, serif;
-        text-align: center;
-        display: block;
-        width: 300px;
-        padding: 1px;
-        border: 2px solid black;
-        margin: 11px auto;
-        font-size: 25px;
-        border-radius: 8px;
-    }
-
-    .container h1 {
-        color: black;
-        text-align: left;
-    }
-
-    .container button {
-        display: block;
-        width: 50%;
-        margin: 15px auto;
-    }
-    @media screen and (max-width: 800px)
-  .left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-</style>
-
-<body>
-    <header class="header">
-        <!-- Left box for logo -->
-        <div class="left">
-            <img src="logo.png">
-            <div><b>Fit & Lift Gym Center</b></div>
-        </div>
-        <!-- Mid box for navbar -->
-        <div class="mid">
-            <ul class="navbar">
-                <table border="3,black">
-                   <tr>
-                    <td> <li><a href="#" class="active">Home</a></li></td>
-                    <td><li><a href="#">Packages</li></td>
-                    <td><li><a href="#">Calculator</a></li></td>
-                    <td><li><a href="#">About</li></td>
-                   </tr> 
-                </table>
-                
+    <title>Fit & Lift Gym Center</title>
+    <style>
+        body
+        {
+            background: url("background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+            background-size: cover;
+            color: black;
+        }
+        a img{
+            width: 100px;
+            height: 100px;
+        }
+        #logo-img
+        {
+            width: 136px;
+            filter: invert(100%);
+        }
+        #anchor
+        {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+            margin-left: 2%;
+        }
+        .navbar-nav
+        {
+            width: 60%;
+        }
+        .navbar-nav li{
+            width: 100%;
+            text-align: center;
+        }
+        .navbar-nav
+        {
+            margin-top: -30px;
+        }
+        .navbar-nav li:hover
+        {
+            background-color: blanchedalmond;
+        }
+        .navbar-nav a
+        {
+            font-size: 1.2rem;
+        }
+        .btn    
+        {
+            background-color: black;
+            color: white;
+        }
+        .btn:hover
+        {
+            background-color: white;
+            color: black;
+        }
+        form
+        {
+            margin-top: 3%;
+            width: 30%;
+        }
+        @media screen and (max-width: 1000px) {
+            nav
+            {
+                border-bottom: 1px solid white;
+            }
+            .navbar-nav
+            {
+                margin-top: 20px;
+            }
+            .btn
+            {
+                margin-top: 20px;
+            }
+            
+            form
+        {
+            margin-top: 5%;
+            width: 80%;
+        }
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="" id="anchor"><img src="logo.png" alt="" id="logo-img"> <br> <b>Fit & Lift Gym Center</b></a>
+          <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 border">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: black; border: 1px solid black;" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black; border: 1px solid black;">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black; border: 1px solid black;">Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black; border: 1px solid black;">About</a>
+              </li>
             </ul>
+            <form class="d-flex newbtn" style="margin-top: -10px;">
+                <a class="btn  btn-lg me-4" href="tel:+88001622053066">Call Us Now</a>
+                <a class="btn  btn-lg" href="https://mail.google.com/mail/u/0/#inbox?compose=new">Email Us</a>
+            </form>
+          </div>
         </div>
+      </nav>
 
-        <!-- Right box for buttons -->
-        <div class="right">
-            <button class="btn"><a href="tel:+88001622053066"><p style="color:white;">Call Us Now</p></a></button>
-            <button class="btn"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="active"><p style="color:white;">Email us</p></a></button>
-        </div>
-    </header>
-    <div class="container">
-        <h1><p style="color:black;">Join the best gym of Sylhet now</p></h1>
+
+
+      <div class="container">
+        
         <form action="noaction.php">
+            <h1 style="color: black;">Join the best gym of Sylhet now</h1>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Name">
+                <input type="text" name="" placeholder="Enter your Name" class="form-control mb-2">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Age">
+                <input type="text" name="" placeholder="Enter your Age" class="form-control mb-2">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Gender">
+                <input type="text" name="" placeholder="Enter your Gender" class="form-control mb-2">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Locality">
+                <input type="text" name="" placeholder="Enter your Locality" class="form-control mb-2">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Email Id">
+                <input type="text" name="" placeholder="Enter your Email Id" class="form-control mb-2">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your Phone Number">
+                <input type="text" name="" placeholder="Enter your Phone Number" class="form-control mb-2">
             </div>
             <button class="btn">Submit</button>
         </form>
     </div>
-</body>
+    <!-- Optional JavaScript; choose one of the two! -->
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
