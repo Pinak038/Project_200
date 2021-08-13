@@ -1,7 +1,6 @@
 window.onload = () => {
     let button = document.querySelector("#btn");
   
-    // Function for calculating BMI
     button.addEventListener("click", calculateBMI);
 };
   
